@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TutungTungTung</title>
+
+    <!-- FontAwesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+
+  </head>
+  <body>
+
+    <section class="heading">
+      <header id="header" class="flex-left">
+        <img id="header-img" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNjQgNjQiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIj48ZyBpZD0iQ2FsZW5kYXIiPjxwYXRoIGQ9Ik01Nyw4SDUyVjZhNCw0LDAsMCwwLTgsMFY4SDM2VjZhNCw0LDAsMCwwLTgsMFY4SDIwVjZhNCw0LDAsMCwwLTgsMFY4SDdhNSw1LDAsMCwwLTUsNVY1M2E1LDUsMCwwLDAsNSw1SDM1YTEsMSwwLDAsMCwwLTJIN2EzLjAwOSwzLjAwOSwwLDAsMS0zLTNWMjJINjBWMzlhMSwxLDAsMCwwLDIsMFYxM0E1LDUsMCwwLDAsNTcsOFpNNDYsNmEyLDIsMCwwLDEsNCwwdjZhMiwyLDAsMCwxLTQsMFpNMzAsNmEyLDIsMCwwLDEsNCwwdjZhMiwyLDAsMCwxLTQsMFpNMTQsNmEyLDIsMCwwLDEsNCwwdjZhMiwyLDAsMCwxLTQsMFpNNjAsMjBINFYxM2EzLjAwOSwzLjAwOSwwLDAsMSwzLTNoNXYyYTQsNCwwLDAsMCw4LDBWMTBoOHYyYTQsNCwwLDAsMCw4LDBWMTBoOHYyYTQsNCwwLDAsMCw4LDBWMTBoNWEzLjAwOSwzLjAwOSwwLDAsMSwzLDNaIi8+PHBhdGggZD0iTTMwLDI5YTIsMiwwLDAsMC0yLTJIMjRhMiwyLDAsMCwwLTIsMnYzYTIsMiwwLDAsMCwyLDJoNGEyLDIsMCwwLDAsMi0yWm0tNiwzVjI5aDR2M1oiLz48cGF0aCBkPSJNMTgsMjlhMiwyLDAsMCwwLTItMkgxMmEyLDIsMCwwLDAtMiwydjNhMiwyLDAsMCwwLDIsMmg0YTIsMiwwLDAsMCwyLTJabS02LDNWMjloNHYzWiIvPjxwYXRoIGQ9Ik01MiwzNGEyLDIsMCwwLDAsMi0yVjI5YTIsMiwwLDAsMC0yLTJINDhhMiwyLDAsMCwwLTIsMnYzYTIsMiwwLDAsMCwyLDJabS00LTVoNHYzSDQ4WiIvPjxwYXRoIGQ9Ik0zMCwzOGEyLDIsMCwwLDAtMi0ySDI0YTIsMiwwLDAsMC0yLDJ2M2EyLDIsMCwwLDAsMiwyaDRhMiwyLDAsMCwwLDItMlptLTYsM1YzOGg0djNaIi8+PHBhdGggZD0iTTE4LDM4YTIsMiwwLDAsMC0yLTJIMTJhMiwyLDAsMCwwLTIsMnYzYTIsMiwwLDAsMCwyLDJoNGEyLDIsMCwwLDAsMi0yWm0tNiwzVjM4aDR2M1oiLz48cGF0aCBkPSJNMjgsNDVIMjRhMiwyLDAsMCwwLTIsMnYzYTIsMiwwLDAsMCwyLDJoNGEyLDIsMCwwLDAsMi0yVjQ3QTIsMiwwLDAsMCwyOCw0NVptLTQsNVY0N2g0djNaIi8+PHBhdGggZD0iTTM2LDM0aDRhMiwyLDAsMCwwLDItMlYyOWEyLDIsMCwwLDAtMi0ySDM2YTIsMiwwLDAsMC0yLDJ2M0EyLDIsMCwwLDAsMzYsMzRabTAtNWg0djNIMzZaIi8+PHBhdGggZD0iTTM0LDQxYTIsMiwwLDAsMCwyLDIsMSwxLDAsMCwwLDAtMlYzOGg0YTEsMSwwLDAsMCwwLTJIMzZhMiwyLDAsMCwwLTIsMloiLz48cGF0aCBkPSJNMTYsNDVIMTJhMiwyLDAsMCwwLTIsMnYzYTIsMiwwLDAsMCwyLDJoNGEyLDIsMCwwLDAsMi0yVjQ3QTIsMiwwLDAsMCwxNiw0NVptLTQsNVY0N2g0djNaIi8+PHBhdGggZD0iTTQ5LDM2QTEzLDEzLDAsMSwwLDYyLDQ5LDEzLjAxNSwxMy4wMTUsMCwwLDAsNDksMzZabTAsMjRBMTEsMTEsMCwxLDEsNjAsNDksMTEuMDEzLDExLjAxMywwLDAsMSw0OSw2MFoiLz48cGF0aCBkPSJNNTQuNzc4LDQ0LjgwOCw0Nyw1Mi41ODYsNDMuNDY1LDQ5LjA1YTEsMSwwLDAsMC0xLjQxNCwxLjQxNGw0LjI0Miw0LjI0M2ExLDEsMCwwLDAsMS40MTQsMGw4LjQ4NS04LjQ4NWExLDEsMCwwLDAtMS40MTQtMS40MTRaIi8+PC9nPjwvc3ZnPgo=" alt="company-logo-img" />
+
+        <p class="big-heading">TuTungTung</p>
+      </header>
+
+
+      <nav id="nav-bar" class="flex-right">
+        <ul id= "navigation-bar">
+          <li class="nav-items"><a class="nav-link" href="#get-started">Home</a></li>
+          <li class="nav-items"><a class="nav-link" href="#feature-section">Features</a></li>
+          <li class="nav-items"><a class="nav-link" href="#pricing-section">Pricing</a></li>
+          <li class="nav-items"><a class="nav-link" href="#footer-section">Contact Us</a></li>
+        </ul>
+      </nav>
+    </section>
+
+
+
+    <section id="get-started">
+      <h1 class="big-heading">Best Quality, Innovative and Well Managed Events</h1>
+      <form id="form" action=" https://www.freecodecamp.com/email-submit" method="post">
+        <input id="email" type="email" name="email" value="" placeholder="Enter your email here"><br>
+        <input type="submit" id="submit"  name="button" value="Get Started">
+
+
+      </form>
+
+
+
+    </section>
+
+    <section id="feature-section">
+
+      <div class="feature">
+        <i class="fas fa-check-circle fa-4x feature-icon"></i>
+        <h2 class="big-heading">Premium Materials</h2>
+        <p>Our company uses the best sound quality system, generate spectacular paranormas from wide
+        screen displays brought from some of the finest manufacturers.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-lightbulb fa-4x feature-icon"></i>
+        <h2 class="big-heading">Innovation</h2>
+        <p>Our Team has some of the finest innovators of the country, designing your events with unique
+        and new styles.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-smile fa-4x feature-icon"></i>
+        <h2 class="big-heading">Customer Satisfaction</h2>
+        <p>We value our clients, encouraging them to participate in every process of event management to
+        provide them personalized decorations.</p>
+
+      </div>
+
+    </section>
+
+    <section id="show-off-section">
+      <h2 class="big-heading-light">Not Our Work</h2>
+      <iframe class="work-video" id="video"  src="https://www.youtube.com/embed/rD3e6avEOKc" frameborder="0" allow="accelerometer;
+      autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    </section>
+
+    <section id="pricing-section">
+      <h2 class="big-heading-price">Current Offers</h2>
+      <div class="price-flex">
+        <div class="price-box">
+          <h2 class="big-heading price-heading">Weedings</h2>
+          <p class="price">$400</p>
+          <p>Lorem ipsum</p>
+          <p>Lorem ipsum</p>
+          <p>Lorem ipsum</p>
+          <p>Lorem Ipsum</p>
+          <button type="button" name="button">Select</button>
+        </div>
+
+        <div class="price-box">
+          <h2 class="big-heading price-heading">Ceremony</h2>
+          <p class="price">$450</p>
+          <p>Lorem ipsum</p>
+          <p>Lorem ipsum</p>
+          <p>Lorem ipsum</p>
+          <p>Lorem Ipsum</p>
+          <button type="button" name="button">Select</button>
+        </div>
+
+        <div class="price-box">
+          <h2 class="price-heading">Sports</h2>
+          <p class="price">$700</p>
+          <p>Lorem ipsum</p>
+          <p>Lorem ipsum</p>
+          <p>Lorem ipsum</p>
+          <p>Lorem Ipsum</p>
+          <button type="button" name="button">Select</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer-section">
+      <h2 class="big-heading-light">Contact us</h2>
+      <i class="fab fa-facebook-f footer-icon"></i>
+      <i class="fab fa-instagram footer-icon"></i>
+      <i class="fab fa-twitter footer-icon"></i>
+      <i class="fas fa-envelope footer-icon"></i>
+      <p class="footer-icon">&copy; Tutung 2021</p>
+
+    </section>
+
+  </body>
+</html>

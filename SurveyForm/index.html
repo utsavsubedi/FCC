@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Survey Form</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <header>
+        <h1 id="title">Tindog Survey Form</h1>
+        <p id="description">Bark at us with your information.</p>
+      </header>
+      <div class="my-form">
+        <form id="survey-form" action="index.html" method="post">
+          <div class="first-box">
+
+            <div class="field">
+              <label id="name-label" for="name">First Name: </label><br>
+              <input type="text" name="name" required id="name" placeholder="Enter your first name" required>
+              <br>
+            </div>
+
+            <div class="field">
+              <label id="lname-label" for="lname">Last Name: </label><br>
+              <input type="text" name="lname" required id="lname" placeholder="Enter your last name" required>
+              <br>
+            </div>
+
+            <div class="field">
+              <label id="email-label" for="email">Email:</label><br>
+              <input id="email" type="email" name="email" placeholder="Enter your email here" required>
+              <br>
+            </div>
+
+            <div class="field">
+              <legend>Gender:</legend>
+              <input type="radio" class="no-mp" name="gender" value="male" >
+              <label class="no-mp" for="male">Male</label>
+              <input type="radio" class="no-mp" name="gender" value="female" >
+              <label class="no-mp" for="female">Female</label>
+            </div>
+
+            <div class="field">
+              <label for="DOB">Date of Birth:</label><br>
+              <input type="date" id="DOB" name="DOB" value="" placeholder="Select your Date of Birth">
+              <br>
+            </div>
+
+            <div class="field">
+              <label for="number" id="number-label">Phone Number:</label><br>
+              <input id="number" type="number" min="9" max="11" name="number" value="" placeholder="Enter your Phone Number">
+              <br>
+            </div>
+
+        </div>
+
+        <div class="secoand-box">
+          <div class="field">
+            <legend>Which option best describe you?</legend><br>
+            <select id="dropdown" class="dropdown-menu" name="" required>
+              <option value="human">Human looking for his/her dog's partner</option>
+              <option value="wingman">A Wingman/Wingwoman</option>
+              <option value="dog">Dog</option>
+              <option value="spy">A dog spying on their partner.</option>
+              <option value="null">Prefer Not to Say</option>
+              <option value="Others">Others</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <legend>Would you recommend Tindog to your neighbour's Dog?</legend>
+              <input type="radio" class="no-mp" id="definately" name="recommend" value="Definately">
+              <label for="definately">Definately</label><br>
+              <input type="radio" class="no-mp" id="maybe" name="recommend" value="Maybe">
+              <label for="maybe">Maybe</label>
+              <input type="radio" class="no-mp" id="notsure" name="recommend" value="notsure">
+              <label for="notsure">Not Sure</label>
+          </div>
+
+          <div class="field">
+            <legend>Which feature would you like to see improved in Tindog?</legend>
+            <!-- <select class="dropdown-menu" name="feature" required>
+              <option value="speed">Matching Speed</option>
+              <option value="ui">User Interface</option>
+              <option value="bookings">Hotel Bookings</option>
+              <option value="messaging">Instant Messaging</option>
+              <option value="others">Others</option>
+            </select> -->
+
+            <input type="checkbox" name="speed" id="speed" value="speed" class="no-mp">
+            <label for="speed">Matching Speed</label><br>
+            <input type="checkbox" name="ui" id="ui" value="ui" class="no-mp">
+            <label for="ui">User Interface</label><br>
+            <input type="checkbox" name="bookings" id="bookings" value="bookings" class="no-mp">
+            <label for="bookings">Hotel Bookings</label><br>
+            <input type="checkbox" name="messaging" value="messaging" class="no-mp" id="messaging">
+            <label for="messaging">Instant Messaging</label><br>
+            <input type="checkbox" name="others" value="others" class="no-mp" id="others">
+            <label for="others">Others</label><br>
+
+          </div>
+
+          <div class="field">
+            <legend>Please tell us why you choose the above option with the problem you faced.</legend><br>
+            <textarea name="feedback" rows="8" cols="80" placeholder="Enter your feedback here." ></textarea>
+
+          </div>
+
+          <div class="field">
+            <button id="submit-btn" type="submit" id="submit" name="button">Submit</button>
+
+          </div>
+
+
+        </div>
+
+
+        </form>
+      </div>
+
+    </div>
+
+  </body>
+</html>

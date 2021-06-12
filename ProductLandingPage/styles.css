@@ -1,0 +1,222 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin: 0px;
+  text-align: center;
+  background-color: #494F55;
+  margin-top: 40px;
+}
+
+h1, h2, h3, h4, h5, h6, button{
+  font-style: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.big-heading{
+  font-weight: 800;
+}
+
+.big-heading-light{
+  color: white;
+  font-weight: 800;
+}
+
+section{
+  padding: 20px 0 20px 0;
+}
+
+
+/* Header Section */
+
+#header-img{
+  max-width: 100px;
+  max-height: 60px;
+}
+#header{
+  display: flex;
+  flex-direction: row;
+  margin-left: 8px;
+  justify-content: space-between;
+}
+
+
+.heading{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  background-color: aquamarine;
+  width: 100%;
+  /* margin: 0px; */
+  padding: 0px;
+  top: 0;
+}
+
+.flex-left{
+  flex: 15%;
+}
+
+.flex-right{
+  flex: 90%;
+}
+
+#nav-bar{
+  margin: auto;
+}
+
+#navigation-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  /* align-items: stretch; */
+}
+
+.nav-items{
+  margin-right: 10%;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+/* Get-Started Section */
+#get-started{
+  margin: 80px 0px 40px 0px;
+}
+
+button, #submit{
+  background-color: #f8e076;
+  border-radius: 4px;
+  padding: 10px 15px;
+  border: none;
+  font-weight: 800;
+  font-size: 20px;
+  color:  #666362;
+}
+
+button:hover, #submit:hover{
+  background-color: #e4cc62;
+}
+button:focus, #submit:focus{
+  background-color: #c6ae44;
+}
+
+#email{
+  text-align: center;
+  margin: 10px 10px 20px 10px;
+  padding: 10px;
+  /* background: aquamarine; */
+  border-radius: 4px;
+  border: none;
+  width: 400px;
+  font-size: 1.5rem;
+}
+
+h1{
+  color: white;
+}
+
+
+/* Features section */
+#feature-section{
+  margin-top: 20px;
+  background-color: #9FB168;
+}
+
+.feature{
+  width: 60%;
+  margin: 20px auto 40px;
+}
+
+.feature-icon{
+  color: aquamarine;
+}
+
+/* Show-off Section */
+.work-video{
+  width: 720px;
+  height: 350px;
+}
+
+/* Pricing Section */
+#pricing-section{
+  background-color: #9FB168;
+}
+
+.price-box{
+  border: solid 2px black;
+  padding: 0px 20px 20px 20px;
+  width: 20%;
+  margin: 0px auto 20px auto;
+  border-radius: 8px;
+}
+
+.price-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.price-heading{
+  font-style: 'Montserrat', sans-serif;
+  font-weight: 500;
+  background-color: aquamarine;
+  margin: 0px;
+  margin-left: -20px;
+  border-radius: 8px;
+  width: 100%;
+  padding: 20px;
+
+}
+
+.big-heading-price{
+  font-weight: 800;
+}
+
+/* Footer Section */
+#footer-section{
+  background-color: #494F55;
+
+}
+
+.footer-icon{
+  margin: 10px;
+  color: aquamarine;
+}
+
+
+@media screen and (max-width: 800px) {
+  .heading, #navigation-bar{
+    flex-direction: column;
+    margin: auto;
+  }
+  .nav-items{
+    margin-top: 10px;
+  }
+  #company-img{
+    margin: auto;
+  }
+
+  #header{
+    flex-direction: row;
+    justify-content: center;
+  }
+  #get-started{
+    margin: 200px 0px 40px 0px;
+  }
+  .price-flex{
+    flex-direction: column;
+
+  }
+  .price-box{
+    width: 50%;
+  }
+  .work-video{
+    width: 80vw;
+    height: 50vh;
+  }
+
+}
