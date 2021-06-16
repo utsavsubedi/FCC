@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Python Documentation</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+
+
+  </head>
+  <body>
+
+
+
+    <nav id="navbar">
+      <header>
+        <h1>Python OOP</h1>
+      </header>
+      <!-- <ul> -->
+        <li class="nav-items"> <a class="nav-link" href="#Introduction">Introduction</a> </li>
+        <li class="nav-items"> <a class="nav-link" href="#Class_and_Objects">Class and Objects</a> </li>
+        <li class="nav-items"> <a class="nav-link" href="#Methods">Methods</a> </li>
+        <li class="nav-items"> <a class="nav-link" href="#Inheritance">Inheritance</a> </li>
+        <li class="nav-items"> <a class="nav-link" href="#Encapsulation">Encapsulation</a> </li>
+        <li class="nav-items last-item"> <a class="nav-link" href="#Polymorphism">Polymorphism</a> </li>
+      <!-- </ul> -->
+    </nav>
+
+
+
+    <main id="main-doc">
+
+      <section class="main-section" id="Introduction">
+        <header >
+          <h1>Introduction</h1>
+        </header>
+        <p class="description">Object-oriented programming (OOP) is a computer programming model that organizes
+          software design around data, or objects, rather than functions and logic.
+          An object can be defined as a data field that has unique attributes and behavior.<br><br>
+
+          OOP focuses on the objects that developers want to manipulate rather than the logic required to manipulate them.
+          This approach to programming is well-suited for programs that are large, complex and actively updated or maintained. <br> <br>
+
+          The organization of an object-oriented program also makes the method beneficial to collaborative development,
+          where projects are divided into groups. <br><br>
+
+          Some of the terminologies of OOP are:
+
+          <ul>
+            <li>
+              <span "list-topic">Class</span> − A user-defined prototype for an object that defines a set of attributes that characterize any object of the class.
+              The attributes are data members (class variables and instance variables) and methods, accessed via dot notation.
+            </li> <br>
+            <li>
+              <span class="list-topic">Instance</span> − An individual object of a certain class.
+              An object obj that belongs to a class Circle, for example, is an instance of the class Circle.
+            </li> <br>
+            <li>
+              <span class="list-topic">Method</span> − A special kind of function that is defined in a class definition.
+            </li> <br>
+            <li>
+              <span class="list-topic">Object</span> − A unique instance of a data structure that's defined by its class.
+              An object comprises both data members (class variables and instance variables) and methods.
+            </li>
+          </ul>
+
+
+        </p>
+      </section>
+
+
+      <section class="main-section" id="Class_and_Objects">
+        <header >
+          <h2>Class and Objects</h2>
+        </header>
+        <p class="description">A class is a blueprint for the object. We can think of class as a sketch of a parrot with labels.
+           It contains all the details about the name, colors, size etc. Based on these descriptions, we can study about the parrot.
+           Here, a parrot is an object. <br> <br>The example for class of parrot can be :</p>
+        <code>
+          <p class="code">class Parrot: <br>&nbsp &nbsp pass</p>
+        </code>
+
+        <h2>Object</h2>
+        <p class="description">An object (instance) is an instantiation of a class. When class is defined,
+          only the description for the object is defined. Therefore, no memory or storage is allocated.
+          <br><br>The example for object of parrot class can be:</p>
+        <code>
+        <p class="code">obj = Parrot()</p>
+      </code>
+        <h3>Example of Class and Objects</h3>
+        <code><p class="code">class Parrot:<br>
+          &nbsp &nbsp # class attribute <br>
+          &nbsp &nbsp species = "bird" <br>
+          &nbsp &nbsp # instance attribute <br>
+          &nbsp &nbsp def __init__(self, name, age): <br>
+              &nbsp &nbsp &nbsp &nbsp self.name = name <br>
+              &nbsp &nbsp &nbsp &nbsp self.age = age <br><br>
+
+          # instantiate the Parrot class <br>
+          blu = Parrot("Blu", 10) <br>
+          woo = Parrot("Woo", 15)</p></code>
+
+          <p class="description">In the above program, we created a class with the name Parrot.
+            Then, we define attributes. The attributes are a characteristic of an object.<br>
+          <br>
+        Then, we create instances of the Parrot class. Here, blu and woo are references (value) to our new objects.</p>
+
+      </section>
+
+      <section class="main-section" id="Methods">
+        <header >
+          <h2>Methods</h2>
+        </header>
+        <p class="description">Methods are functions defined inside the body of a class.
+          They are used to define the behaviors of an object.</p>
+        <h3>Creting Methods in Python</h3>
+        <code><p class="code">class Parrot:<br><br>
+
+            &nbsp &nbsp # instance attributes <br>
+            &nbsp &nbsp def __init__(self, name, age): <br>
+                &nbsp &nbsp &nbsp &nbsp self.name = name <br>
+                &nbsp &nbsp &nbsp &nbsp self.age = age <br><br>
+
+            &nbsp &nbsp # instance method <br>
+            &nbsp &nbsp def sing(self, song): <br>
+                &nbsp &nbsp &nbsp &nbsp return "{} sings {}".format(self.name, song) <br><br>
+
+            &nbsp &nbsp def dance(self): <br>
+                &nbsp &nbsp &nbsp &nbsp return "{} is now dancing".format(self.name) <br><br>
+
+        &nbsp &nbsp # instantiate the object <br>
+        &nbsp &nbsp &nbsp &nbsp blu = Parrot("Blu", 10) <br><br>
+
+        &nbsp &nbsp # call our instance methods <br>
+        &nbsp &nbsp print(blu.sing("'Happy'")) <br>
+        &nbsp &nbsp print(blu.dance())</p></code> <br>
+
+        <p class="description">In the above program, we define two methods i.e sing() and dance().
+          These are called instance methods because they are called on an instance object i.e blu.</p>
+      </section>
+
+      <section class="main-section" id="Inheritance">
+        <header >
+          <h2 class="">Inheritance</h2>
+        </header>
+        <p class="description">Inheritance is a way of creating a new class for using details of an existing class without modifying it.
+          The newly formed class is a derived class (or child class).
+          Similarly, the existing class is a base class (or parent class).</p>
+        <h3>Example of Inheritance</h3>
+        <code><p class="code"># parent class <br>
+          class Bird: <br><br>
+
+              &nbsp &nbsp def __init__(self): <br>
+              &nbsp &nbsp &nbsp &nbsp print("Bird is ready")<br><br>
+
+              &nbsp &nbsp def whoisThis(self): <br>
+                  &nbsp &nbsp &nbsp &nbsp print("Bird") <br><br>
+
+              &nbsp &nbsp def swim(self): <br>
+                  &nbsp &nbsp &nbsp &nbsp print("Swim faster")<br><br>
+
+          # child class <br>
+          class Penguin(Bird): <br><br>
+
+              &nbsp &nbsp def __init__(self): <br>
+                  &nbsp &nbsp &nbsp &nbsp # call super() function <br>
+                  &nbsp &nbsp &nbsp &nbsp super().__init__() <br>
+                  &nbsp &nbsp &nbsp &nbsp print("Penguin is ready") <br><br>
+
+              &nbsp &nbsp def whoisThis(self): <br>
+                  &nbsp &nbsp &nbsp &nbsp print("Penguin")<br><br>
+
+              &nbsp &nbsp def run(self): <br>
+                  &nbsp &nbsp &nbsp &nbsp print("Run faster")<br><br>
+
+          peggy = Penguin()<br>
+          peggy.whoisThis()<br>
+          peggy.swim()<br>
+          peggy.run()</p></code>
+          <p class="description">In the above program, we created two classes:
+            <ul>
+              <li>Bird</li>
+              <li>Penguin</li>
+            </ul>
+            The child class inherits the functions of parent class. We can see this from the swim() method. <br>
+            Again, the child class modified the behavior of the parent class. We can see this from the whoisThis() method.
+            Furthermore, we extend the functions of the parent class, by creating a new run() method.</p>
+      </section>
+
+      <section class="main-section" id="Encapsulation">
+        <header  >
+          <h2>Encapsulation</h2>
+        </header>
+
+        <p class="description">
+          <ul>
+            <li>Using OOP in Python, we can restrict access to methods and variables.
+            This prevents data from direct modification which is called encapsulation.</li>
+            <li>In Python, we denote private attributes using underscore as the prefix i.e single _ or double __.</li>
+          </ul>
+          </p>
+        <h3>Example of Encapsulation</h3>
+
+        <code><p class="code">class Computer: <br><br>
+
+              &nbsp &nbsp  def __init__(self): <br>
+                  &nbsp &nbsp &nbsp &nbsp  self.__maxprice = 900 <br>
+
+                &nbsp &nbsp def sell(self): <br>
+                    &nbsp &nbsp &nbsp &nbsp print("Selling Price: {}".format(self.__maxprice)) <br><br>
+
+                &nbsp &nbsp def setMaxPrice(self, price): <br>
+                    &nbsp &nbsp &nbsp &nbsp self.__maxprice = price <br><br>
+
+            c = Computer() <br>
+            c.sell() <br><br>
+
+            # change the price <br>
+            c.__maxprice = 1000 <br>
+            c.sell() <br> <br>
+
+            # using setter function <br>
+            c.setMaxPrice(1000) <br>
+            c.sell()</p></code>
+
+            <p class="description">In the above program, we defined a Computer class. <br>
+              <ul>
+                <li>We used __init__() method to store the maximum selling price of Computer. We tried to modify the price.
+                However, we can't change it because Python treats the __maxprice as private attributes.</li>
+                <li>As shown, to change the value, we have to use a setter function i.e setMaxPrice()
+                which takes price as a parameter.</li>
+              </ul>
+
+
+
+                </p>
+      </section>
+
+      <section class="main-section" id="Polymorphism">
+        <header >
+          <h2>Polymorphism</h2>
+        </header>
+        <p class="description">Polymorphism is an ability (in OOP) to use a common interface for multiple forms (data types). <br>
+
+                Suppose, we need to color a shape, there are multiple shape options (rectangle, square, circle).
+                However we could use the same method to color any shape. This concept is called Polymorphism</p>
+        <h3>Example of polymorphism</h3>
+        <code><p class="code">class Parrot: <br> <br>
+
+                  &nbsp &nbsp def fly(self): <br>
+                      &nbsp &nbsp &nbsp &nbsp print("Parrot can fly") <br><br>
+
+                  &nbsp &nbsp def swim(self): <br>
+                      &nbsp &nbsp &nbsp &nbsp print("Parrot can't swim") <br><br>
+
+              class Penguin: <br> <br>
+
+                  &nbsp &nbsp def fly(self): <br>
+                      &nbsp &nbsp &nbsp &nbsp print("Penguin can't fly") <br><br>
+
+                  &nbsp &nbsp def swim(self): <br>
+                      &nbsp &nbsp &nbsp &nbsp print("Penguin can swim") <br><br>
+
+              # common interface <br>
+              def flying_test(bird): <br>
+                  &nbsp &nbsp bird.fly() <br><br>
+
+              #instantiate objects <br>
+              blu = Parrot() <br>
+              peggy = Penguin() <br> <br>
+
+              # passing the object <br>
+              flying_test(blu) <br>
+              flying_test(peggy)</p></code>
+
+      </section>
+
+      <h2>Refrence</h2>
+      <p class="description">All the documentation for this page is taken from</p>
+      <ul>
+        <li> <a href="https://www.programiz.com/python-programming/object-oriented-programming" target="_blank">Programiz</a> </li>
+        <li><a href="https://www.tutorialspoint.com/python/python_classes_objects.htm" target="_blank">Tutorials Point</a></li>
+      </ul>
+    </main>
+  </body>
+</html>
