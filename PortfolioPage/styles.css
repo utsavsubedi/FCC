@@ -1,0 +1,248 @@
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Sacramento', cursive; */
+
+/* COlors to be used
+#346751
+#C84B31
+#A3A847
+#7F8B52 */
+
+
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin: 0px;
+  text-align: center;
+}
+
+section{
+  margin: 0px;
+}
+
+hr{
+  height: 4px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid white;
+  margin-top: 0px;
+  width: 55%;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+/* Navigation Bar */
+
+#navbar{
+  background-color: #7F8B52;
+  margin: 0px;
+  position: fixed;
+  width: 100%;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0px 20px 0px;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link:hover{
+  color: navajowhite;
+}
+
+
+.nav-item{
+  margin-right: 0px;
+  list-style-type: none;
+  padding: 20px;
+}
+
+.nav-item:hover{
+  background-color: #7952B3;
+}
+
+
+/* Welcome Section */
+
+#welcome-section{
+  /* background-color: #C84B31; */
+  height: 100vh;
+  background-color: #494F55;
+  color: white;
+}
+
+#intro{
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+#job{
+  font-family: 'Sacramento', cursive;
+  font-size: 3rem;
+  margin-top: 0px;
+  color: #A3A847;
+}
+
+.center-me{
+  display: inline-block;
+  margin-top: 200px;
+}
+
+
+/* Projects Section */
+
+#projects{
+  background-color: #9FB168;
+  color: white;
+}
+
+.big-heading{
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: 0px;
+  color: white;
+  margin-bottom: 0px;
+}
+
+.container{
+  padding: 100px;
+}
+
+.project-tile{
+  margin: auto;
+  /* padding: 20px; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.project{
+  width: 330px;
+  height: 320px;
+  margin: 20px;
+  background-color: #494F55;
+  border-radius: 4px;
+}
+
+
+.product-img{
+  width: 330px;
+  height: 240px;
+  box-sizing: border-box;
+  /* border-radius: 4px; */
+  /* border-top: 4px; */
+}
+
+.coding{
+  color: #ff0000;
+  font-size: 16px;
+}
+
+.show-all-btn{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  background-color: #494F55;
+  color: white;
+  padding: 20px 30px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.show-all-btn:hover{
+  background-color: #A3A847;
+  transform: scale(1.1);
+}
+
+
+/* Profile link section */
+
+#footer{
+  background-color: #494F55;
+  color: white;
+  margin: 0px;
+
+  padding: 100px;
+}
+
+i{
+  color: white;
+}
+
+
+.profile-text{
+  font-size: 1.5rem;
+  margin-right: 20px;
+  position: relative;
+
+}
+
+
+.profile-text:hover{
+
+  animation-name: drop-me;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes drop-me {
+  0%{
+    top: 0px;
+  }
+  25%{
+    top: 10px;
+  }
+  100%{
+    top: 10px;
+  }
+}
+
+.footer-icon{
+  padding-right: 10px;
+}
+
+.profile-heading{
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.profile-question{
+  margin-bottom: 60px;
+  font-weight: 200;
+  font-size: 1.3rem;
+}
+
+.footer-line{
+  margin-top: 200px;
+  width: 100%;
+  border-color: #7F8B52;
+}
+
+.last-info{
+  font-size: 1.2em;
+}
+
+
+/* Responsive */
+@media screen and (max-width:960px){
+  .project{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
